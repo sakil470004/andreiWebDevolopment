@@ -1,0 +1,74 @@
+/* Selector { 
+    Property : value;
+} */
+
+* {
+    /* i want everyting to be right */
+    text-align: right;
+}
+
+body {
+    background-image: url("../img/1.png");
+    background-size: cover;
+}
+
+h2,
+p {
+    color: red;
+    text-align: center;
+    border: 5px dashed rgba(219, 67, 29, 0.399);
+    cursor: pointer;
+}
+
+img {
+    float: right;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: #AA4139;
+}
+
+p {
+    background-color: rgba(40, 68, 224, 0.445);
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 25px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 130%;
+    /* font-family: 'Times New Roman', Times, serif, Georgia; */
+    /* coutside font from google in  about.html file  */
+    font-family: 'Cormorant Garamond', serif;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    color: white
+}
+
+a {
+    color: white;
+}
+
+.webtext {
+    border: 5px dashed green;
+}
+
+.active {
+    color: red
+}
+
+#div1 {
+    background: rgba(0, 0, 255, 0.2);
+}
+
+#div2 {
+    background: rgba(255, 0, 0, 0.2);
+}

@@ -6,7 +6,9 @@ img {
     width: 450px;
     height: 300px;
     margin:10px;
+    border-radius: 10px;
     transition: all 0.5s;
+    border: 5px dashed black;
 }
 
 .container {
@@ -33,5 +35,6 @@ h1{
 }
 img:hover{
     transform:scale(1.1);
+    border:0px;
 
 }

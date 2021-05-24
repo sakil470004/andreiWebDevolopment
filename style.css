@@ -7,7 +7,7 @@ body {
     /* for propetional reson */
     /* padding:30px 50px;
     margin:40px 60px; */
-    cursor: pointer;
+    /* cursor: pointer; */
     /* display:inline-block; */
     color: #FFF;
     font-size: 2em;
@@ -22,17 +22,19 @@ body {
     -o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
 }
+
 /* .box:hover {
     -webkit-transform:rotate(-7deg);
     -moz-transform:rotate(-7deg);
     -o-transform:rotate(-7deg);
     transform:rotate(-7deg);
 } */
+
 .box:hover {
-    -webkit-transform:scale(0.8);
-    -moz-transform:scale(0.8);
-    -o-transform:scale(0.8);
-    transform:scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
 }
 
 /* nav */
@@ -43,7 +45,6 @@ body {
     width: 100%;
     /* for always on the top */
     z-index: 999;
-
 }
 
 .main-nav {
@@ -52,7 +53,9 @@ body {
     font-size: 0.7cm;
     margin: 0;
 }
+
 /* it actually work when ever the divice width<600px */
+
 @media only screen and(max-width:600px) {
     .main-nav {
         font-size: 0.5cm;
@@ -73,6 +76,16 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    cursor: pointer;
+    transform: scale(0.8);
+    color: red;
+    transition: all 0.2s linear;
+}
+
 /* COVER */
 
 .container {
@@ -91,12 +104,29 @@ a {
 .grid-wrapper {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 10px;
 }
 
-.box>img {
-    width: 100%;
+.my-work {
+    font-size: 0.9em;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+    
 }
+
+.my-work a {}
+
+.my-work a:hover {
+    background: linear-gradient(to right, rgb(167, 211, 167), rgb(250, 82, 82));
+    transition: all 0.2s linear;
+}
+
+/* .box>img {
+    width: 100%;
+} */
 
 .box {
     background-color: #444;
